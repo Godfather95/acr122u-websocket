@@ -5,8 +5,8 @@ from typing import List
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 
-from .my_reader import ReaderContainer
-from .reader_helpers import CardReaderConnector, CardReaderPoller
+from my_reader import ReaderContainer
+from reader_helpers import CardReaderConnector, CardReaderPoller
 
 app = Flask(__name__)
 
