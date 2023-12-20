@@ -5,8 +5,8 @@ from typing import List
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 
-from my_reader import ReaderContainer
-from reader_helpers import CardReaderConnector, CardReaderPoller
+from .my_reader import ReaderContainer
+from .reader_helpers import CardReaderConnector, CardReaderPoller
 
 app = Flask(__name__)
 
@@ -115,3 +115,6 @@ card_reader_poller.start()
 
 if __name__ == "__main__":
     socketio.run(app, host="0.0.0.0", port=8080)
+
+def runApp():
+    socketio.run(app, host="0.0.0.0", port=8080, allow_unsafe_werkzeug=True)

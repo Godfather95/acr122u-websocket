@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{9b1865d6-c974-42dd-9526-2275b09c0cdc}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>acr122u_websocket/app.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -27,6 +27,7 @@
     <Compile Include="acr122u_websocket\my_reader.py" />
     <Compile Include="acr122u_websocket\reader_helpers.py" />
     <Compile Include="acr122u_websocket\__init__.py" />
+    <Compile Include="main.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="acr122u_websocket\templates\test.html" />
